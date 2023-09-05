@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Your Personalized Password Generator</title>
+    <link rel="icon" type="image/pm-icon" href="logo3.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="Your Logo" />
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>Password Manager <i class="fa-solid fa-lock"></i></h1>
+      <p>
+        <i>
+          <b>"Hey there, secret keeper! </b><br />Welcome to the vault of
+          digital mysteries, where we promise not to forget your passwords, no
+          matter how hard you try. We've got your back in this cyber maze, so
+          please tap in your secret handshake (aka your login details) to access
+          your treasure trove of passwords. <br /><b
+            >Stay cryptic and chuckle on!"</b
+          ></i
+        >
+      </p>
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>Username</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+      </table>
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required />
+        <br /><br />
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
